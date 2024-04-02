@@ -10,3 +10,34 @@ ul, ol {
     list-style: none;
 }
 /* #endregion RESET */
+
+/* #region GENERAL */
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+/* #endregion GENERAL */
+
+/* #region HEADER */
+img{
+    width: 50%;
+}
+/* #endregion HEADER */
+
+/* #region MAIN */
+/*input*/
+#task-input, #task-input + button{
+    border: 1px solid gray;
+    padding: 6px;
+    border-radius: 20px;
+}
+
+/*list*/
+.task-container{
+    margin-top: 10px;
+    background-color: lightblue;
+}
+
+/* #endregion MAIN */

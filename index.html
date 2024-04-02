@@ -18,11 +18,12 @@
         <div class="container">
             <div id="app">
                 <div class="input-group">
-                    <input type="text" id="task-input" placeholder="La mia prossima attività...">
-                    <button type="button">Aggiungi</button>
+                    <input type="text" id="task-input" placeholder="La mia prossima attività..." v-model="task">
+                    <button type="button" @click="addNewTask">Aggiungi</button>
                 </div>
                 <div class="task-container">
-                    
+                    <ul v-if="todoTasks.length > 0">
+                    </ul>
                 </div>
             </div>
         </div>

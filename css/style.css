@@ -49,6 +49,8 @@ img{
 
 li{
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 li + li{

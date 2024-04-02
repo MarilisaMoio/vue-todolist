@@ -17,6 +17,9 @@ createApp({
         },
         isDone(index){
             this.todoTasks[index].done = true;
+        },
+        eliminateTask(index){
+            this.todoTasks.splice(index, 1);
         }
     }
 }).mount(app);

@@ -16,7 +16,7 @@ createApp({
             this.userTask = "";
         },
         isDone(index){
-            this.todoTasks[index].done = true;
+            this.todoTasks[index].done = !this.todoTasks[index].done;
         },
         eliminateTask(index){
             this.todoTasks.splice(index, 1);

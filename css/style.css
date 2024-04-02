@@ -30,14 +30,32 @@ img{
 /*input*/
 #task-input, #task-input + button{
     border: 1px solid gray;
-    padding: 6px;
+    padding: 6px 10px;
     border-radius: 20px;
+}
+#task-input{
+    width: 60%;
+    margin-right: 10px;
 }
 
 /*list*/
 .task-container{
-    margin-top: 10px;
-    background-color: lightblue;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: lightgray;
+    padding: 10px 30px;
+    text-align: left;
 }
 
+li{
+    padding: 10px;
+}
+
+li + li{
+    border-top: 1px solid grey;
+}
+
+.checked{
+    text-decoration: line-through;
+}
 /* #endregion MAIN */

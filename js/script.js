@@ -3,16 +3,20 @@ const { createApp } = Vue;
 createApp({
     data(){
         return{
-            task: "",
+            userTask: "",
             todoTasks: [],
         }
     },
     methods: {
         addNewTask(){
             const newActivity = {};
-            newActivity.task = this.task.trim();
+            newActivity.task = this.userTask.trim();
             newActivity.done = false;
-            this.todoTasks.push(newActivity)
+            this.todoTasks.push(newActivity);
+            this.userTask = "";
+        },
+        isDone(index){
+            this.todoTasks[index].done = true;
         }
     }
 }).mount(app);

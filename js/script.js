@@ -6,4 +6,4 @@ createApp({
             todoTasks: [],
         }
     }
-})
+}).mount(app);
